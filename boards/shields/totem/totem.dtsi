@@ -8,6 +8,11 @@
 #include <physical_layouts.dtsi>
 
 / {
+    wired_split {
+        compatible = "zmk,wired-split";
+        device = <&xiao_serial>;
+    };
+
     chosen {
         zmk,kscan = &kscan0;
         // zmk,matrix_transform = &default_transform;
