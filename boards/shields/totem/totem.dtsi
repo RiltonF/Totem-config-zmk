@@ -11,6 +11,7 @@
     wired_split: wired_split {
         compatible = "zmk,wired-split";
         device = <&xiao_serial>;
+        status = "okay";
     };
 
     chosen {
