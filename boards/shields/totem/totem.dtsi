@@ -8,7 +8,7 @@
 #include <physical_layouts.dtsi>
 
 / {
-    wired_split {
+    wired_split: wired_split {
         compatible = "zmk,wired-split";
         device = <&xiao_serial>;
     };
