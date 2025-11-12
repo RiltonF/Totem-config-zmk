@@ -14,3 +14,11 @@
                 <&xiao_d 9  GPIO_ACTIVE_HIGH>,
                 <&xiao_d 8  GPIO_ACTIVE_HIGH>;
 };
+
+
+&xiao_serial {
+    status = "okay";
+    current-speed = <115200>;
+    tx-pin = <0>;
+    rx-pin = <1>;
+};
