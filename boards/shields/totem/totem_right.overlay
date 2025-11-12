@@ -22,6 +22,4 @@
 &xiao_serial {
     status = "okay";
     current-speed = <115200>;
-    # tx-pin = <1>;
-    # rx-pin = <0>;
 };
