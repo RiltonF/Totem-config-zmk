@@ -22,4 +22,19 @@
 &xiao_serial {
     status = "okay";
     current-speed = <115200>;
+    pinctrl-0 = <&uart0_swapped>;
+};
+
+&pinctrl {
+
+    // Swapping the rx/tx pins on one half of the controller. Got the values from the device tree dump during build
+    uart0_swapped: uart0_swapped {
+        group1 {
+            pinmux = < 0x12 >;
+        };
+        group2 {
+            pinmux = < 0x2>;
+            input-enable;
+        };
+    };
 };
