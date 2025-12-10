@@ -16,7 +16,7 @@
 };
 
 
-&xiao_serial {
-    status = "okay";
-    current-speed = <115200>;
-};
+//&xiao_serial {
+//    status = "okay";
+//    current-speed = <115200>;
+//};

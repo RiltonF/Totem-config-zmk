@@ -14,6 +14,6 @@ if SHIELD_TOTEM_LEFT || SHIELD_TOTEM_RIGHT
     config ZMK_SPLIT
         default y
 
-    config ZMK_SPLIT_WIRED
-        default y
+    # config ZMK_SPLIT_WIRED
+        # default y
 endif
