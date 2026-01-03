@@ -20,28 +20,18 @@
                 <&xiao_d 4  GPIO_ACTIVE_HIGH>;
 };
 
-//&xiao_serial {
-//    status = "okay";
-//    current-speed = <115200>;
-//    pinctrl-0 = <&pio0_uart_default>;
-//};
-//
-// Swapping the rx/tx pins on one half of the controller. Got the values from the device tree dump during build
-//&pinctrl {
-//    /* configuration for the uart0 "default" state */
-//    pio0_uart_default: pio0_uart_default {
-//        /* tx pin, NAME IS NOT ARBITRARY */
-//        tx_pins {
-//            /* configure P0 as UART0 TX */
-//            pinmux = <PIO0_P0>;
-//            };
-//        /* rx pin, NAME IS NOT ARBITRARY */
-//        rx_pins {
-//            /* configure P1 as UART0 RX */
-//            pinmux = <PIO0_P1>;
-//            /* enable input on pin 1 */
-//            input-enable;
-//            bias-pull-up;
-//        };
-//    };
-//};
+
+&pinctrl {
+    pio0_uart_default: pio0_uart_default {
+        tx_pins {
+            /* configure P1 as UART0 TX */
+            pinmux = <PIO0_P1>;
+            };
+        rx_pins {
+            /* configure P0 as UART0 RX */
+            pinmux = <PIO0_P0>;
+            input-enable;
+            bias-pull-up;
+        };
+    };
+};

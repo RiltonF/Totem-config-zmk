@@ -1,8 +1,8 @@
 include:
-  - board: seeeduino_xiao_rp2040
+  - board: xiao_rp2040
     shield: totem_left # rgbled_adapter
     # cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 
-  - board: seeeduino_xiao_rp2040
+  - board: xiao_rp2040
     shield: totem_right # rgbled_adapter
     # cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n

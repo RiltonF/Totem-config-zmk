@@ -11,7 +11,19 @@
 
     wired_split: wired_split {
         compatible = "zmk,wired-split";
-        device = <&xiao_serial>;
+        device = <&pio0_uart>;
+    };
+
+    &pio0 {
+        status = "okay";
+
+        pio0_uart: serial {
+            status = "okay";
+            compatible = "raspberrypi,pico-uart-pio";
+            pinctrl-0 = <&pio0_uart_default>;
+            pinctrl-names = "default";
+            current-speed = <115200>;
+        };
     };
 
     chosen {
